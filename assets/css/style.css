@@ -30,7 +30,19 @@
 }
 
 .icon-bar {
-  background: #f1f1f1;
+  background-color: #f1f1f1 !important;
+  justify-content: center;
+}
+
+.icon-bar p {
+  font-size: 0.8rem;
+  text-align: center;
+  left: 50%;
+}
+
+.icon-bar img {
+  text-align: center;
+  justify-content: center;
 }
 
 .section-icon {
