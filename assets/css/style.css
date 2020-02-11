@@ -18,35 +18,76 @@
 /*#region Content */
 .header-img {
   object-fit: cover;
-  object-position: 100% 0;
+  object-position: 100% 75%;
   width: 100%;
   height: 70px;
 }
 
-.header-fill {
-  background: #c1c1c1;
-  height: 50px;
-  width: 100%;
+.header-container {
+  padding-bottom: 1.5rem;
+}
+
+.header-title {
+  margin-left: 110px;
+}
+
+.header-icon {
+  background-color: #343a40;
+  height: 10% !important;
+  z-index: 1;
+  position: absolute;
+  top: 35px;
+  left: 27px;
+  padding: 10px;
 }
 
 .icon-bar {
   background-color: #f1f1f1 !important;
   justify-content: center;
+  height: 600px;
 }
 
 .icon-bar p {
-  font-size: 0.8rem;
+  font-size: 0.6rem;
   text-align: center;
   left: 50%;
 }
 
 .icon-bar img {
-  text-align: center;
-  justify-content: center;
+  width: 25px;
+  height: 25px;
+  margin-top: 15px;
 }
 
-.section-icon {
-  width: 50%;
+button {
+  padding: 0% !important;
+}
+
+button:focus {
+  border: none !important;
+  outline: none !important;
+}
+
+.btn:focus {
+  box-shadow: none !important;
+}
+
+.icon-button {
+  justify-content: center;
+  vertical-align: middle;
+  scale: 1;
+  transition: transform 600ms;
+  width: 100%;
+}
+
+.icon-button:hover {
+  transform: scale(1.2);
+}
+
+.icon-button:focus {
+  background-color: #dcdcdc;
+  border: none !important;
+  outline: none !important;
 }
 
 /*!
@@ -119,12 +160,13 @@
   display: block;
   text-decoration: none;
   color: #000;
+  transition: color 600ms;
 }
 
 .sidebar-nav li a:hover {
   text-decoration: none;
-  color: purple;
-  background: rgba(247, 0, 255, 0.2);
+  color: #fff;
+  background: rgba(52, 58, 64, 0.7);
 }
 
 .sidebar-nav li a:active,
