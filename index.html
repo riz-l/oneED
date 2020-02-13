@@ -25,7 +25,9 @@
   <!--#endregion -->
   <body>
     <!--#region Navigation, top -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav
+      class="navbar navbar-expand-lg navbar-dark navbar-bg sticky-top shadow-lg"
+    >
       <span class="navbar-brand mb-0 h1" href="#">
         <img
           src="/assets/img/logos/oneed-white.png"
@@ -71,22 +73,31 @@
     <!--#region Content -->
     <div id="wrapper">
       <!--#region Navigation, side -->
-      <div id="sidebar-wrapper" class="bg-light shadow-lg">
+      <div id="sidebar-wrapper" class="bg-oneED-2 shadow-lg">
         <ul class="sidebar-nav">
           <li>
-            <a href="#">Patient Details</a>
+            <a href="#" class="text-white">
+              <i class="fas fa-procedures"></i>
+              Ward
+            </a>
           </li>
           <li>
-            <a href="#">Patient History</a>
+            <a href="#" class="text-white">
+              <i class="fas fa-user"></i>
+              Patient
+            </a>
           </li>
           <li>
-            <a href="#">Allergies</a>
+            <a href="#" class="text-white">
+              <i class="fas fa-clipboard-list"></i>
+              Assessments
+            </a>
           </li>
           <li>
-            <a href="#">Alerts</a>
-          </li>
-          <li>
-            <a href="#">Observations</a>
+            <a href="#" class="text-white">
+              <i class="fas fa-chalkboard-teacher"></i>
+              Training
+            </a>
           </li>
         </ul>
       </div>
@@ -99,24 +110,43 @@
           <div class="row">
             <!--#region Patient Details -->
             <div class="col-lg-6">
-              <img
-                src="/assets/img/headers/header1.jpg"
-                alt="Patient Details Header"
-                class="img-fluid header-img rounded"
-              />
-              <p class="h1">Patient Details</p>
-              <p class="lead">Patient demographics and contact information</p>
+              <!--#region Patient Details Header -->
+              <div class="header-container">
+                <img
+                  src="/assets/img/headers/header1.jpg"
+                  alt="Patient Details Header"
+                  class="img-fluid header-img"
+                />
+                <div class="header-title">
+                  <p class="h1">Patient Details</p>
+                  <p class="lead">
+                    Patient demographics and contact information
+                  </p>
+                </div>
+                <img
+                  src="/assets/img/icons/patient.png"
+                  alt="Patient Details Icon"
+                  class="img-fluid header-icon shadow rounded"
+                />
+                <div class="header-fill"></div>
+              </div>
+              <!--#endregion /Patient Details Header -->
+
               <div class="container-fluid">
                 <div class="row">
                   <!--#region Patient Details Icon Bar -->
-                  <div class="col-lg-2 col-md-2 col-sm-2 col-2">
-                    <div class="icon-bar text-center mx-auto">
-                      <img
-                        src="/assets/img/icons/patient-black.png"
-                        alt="Patient Details Icon"
-                        class="img-fluid section-icon"
-                      />
-                      <p class="text-center">Patient Details</p>
+                  <div
+                    class="col-lg-2 col-md-2 col-sm-2 col-2 icon-bar shadow-md"
+                  >
+                    <div class="text-center mx-auto">
+                      <button type="button" class="btn icon-button btn-block">
+                        <img
+                          src="/assets/img/icons/patient-black.png"
+                          alt="Patient Details Icon"
+                          class="img-fluid"
+                        />
+                        <p class="text-center">Patient Details</p>
+                      </button>
                     </div>
                   </div>
                   <!--#endregion /Patient Details Icon Bar -->
@@ -213,6 +243,13 @@
                             />
                           </div>
                           <div class="form-group">
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="patientAddressFive"
+                            />
+                          </div>
+                          <div class="form-group">
                             <label for="patientPostCode">Post Code</label>
                             <input
                               type="text"
@@ -249,25 +286,118 @@
 
             <!--#region Patient History -->
             <div class="col-lg-6">
-              <img
-                src="/assets/img/headers/header3.jpg"
-                alt="Patient History Header"
-                class="img-fluid header-img rounded"
-              />
+              <!--#region Patient History Header -->
+              <div class="header-container">
+                <img
+                  src="/assets/img/headers/header4.jpg"
+                  alt="Patient Details Header"
+                  class="img-fluid header-img overlay"
+                />
+                <div class="header-title">
+                  <p class="h1">Patient History</p>
+                  <p class="lead">Alerts, allergies, medications, etc.</p>
+                </div>
+                <img
+                  src="/assets/img/icons/patienthistory-white.png"
+                  alt="Patient Details Icon"
+                  class="img-fluid header-icon shadow rounded"
+                />
+                <div class="header-fill"></div>
+              </div>
+              <!--#endregion /Patient History Header -->
 
-              <p class="h1">Patient History</p>
-              <p class="lead">Alerts, allergies, medications, etc.</p>
-              <p>
-                This template has a responsive menu toggling system. The menu
-                will appear collapsed on smaller screens, and will appear
-                non-collapsed on larger screens. When toggled using the button
-                below, the menu will appear/disappear. On small screens, the
-                page content will be pushed off canvas.
-              </p>
-              <p>
-                Make sure to keep all page content within the
-                <code>#page-content-wrapper</code>.
-              </p>
+              <!--#region Patient History Icon Bar -->
+              <div class="col-lg-2 col-md-2 col-sm-2 col-2 icon-bar shadow-md">
+                <div class="text-center mx-auto">
+                  <button type="button" class="btn icon-button btn-block">
+                    <img
+                      src="/assets/img/icons/alert-black.png"
+                      alt="Patient Details Icon"
+                      class="img-fluid"
+                    />
+                    <p class="text-center">Alerts</p>
+                  </button>
+                </div>
+                <div class="text-center mx-auto">
+                  <button type="button" class="btn icon-button btn-block">
+                    <img
+                      src="/assets/img/icons/allergies-black.png"
+                      alt="Patient Details Icon"
+                      class="img-fluid"
+                    />
+                    <p class="text-center">Allergies</p>
+                  </button>
+                </div>
+                <div class="text-center mx-auto">
+                  <button type="button" class="btn icon-button btn-block">
+                    <img
+                      src="/assets/img/icons/complications-black.png"
+                      alt="Patient Details Icon"
+                      class="img-fluid"
+                    />
+                    <p class="text-center">Complications</p>
+                  </button>
+                </div>
+                <div class="text-center mx-auto">
+                  <button type="button" class="btn icon-button btn-block">
+                    <img
+                      src="/assets/img/icons/diagnosis-black.png"
+                      alt="Patient Details Icon"
+                      class="img-fluid"
+                    />
+                    <p class="text-center">Diagnosis</p>
+                  </button>
+                </div>
+                <div class="text-center mx-auto">
+                  <button type="button" class="btn icon-button btn-block">
+                    <img
+                      src="/assets/img/icons/findings-black.png"
+                      alt="Patient Details Icon"
+                      class="img-fluid"
+                    />
+                    <p class="text-center">Findings</p>
+                  </button>
+                </div>
+                <div class="text-center mx-auto">
+                  <button type="button" class="btn icon-button btn-block">
+                    <img
+                      src="/assets/img/icons/complaint-black.png"
+                      alt="Patient Details Icon"
+                      class="img-fluid"
+                    />
+                    <p class="text-center">Presenting Complaints</p>
+                  </button>
+                </div>
+                <div class="text-center mx-auto">
+                  <button type="button" class="btn icon-button btn-block">
+                    <img
+                      src="/assets/img/icons/procedures-black.png"
+                      alt="Patient Details Icon"
+                      class="img-fluid"
+                    />
+                    <p class="text-center">Procedures</p>
+                  </button>
+                </div>
+                <div class="text-center mx-auto">
+                  <button type="button" class="btn icon-button btn-block">
+                    <img
+                      src="/assets/img/icons/symptoms-black.png"
+                      alt="Patient Details Icon"
+                      class="img-fluid"
+                    />
+                    <p class="text-center">Symptoms</p>
+                  </button>
+                </div>
+              </div>
+              <!--#endregion /Patient History Icon Bar -->
+
+              <!--#region Patient History Form -->
+              <div class="col-lg-10 col-md-10 col-sm-10 col-10">
+                <form>
+                  <div class="form-row"></div>
+                </form>
+              </div>
+              <!--#endregion /Patient History Form -->
             </div>
             <!--#endregion /Patient History -->
           </div>

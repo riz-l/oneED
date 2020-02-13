@@ -7,15 +7,39 @@
 /*#endregion */
 
 /*#region Globals */
+.bg-oneED-1 {
+  background-color: rgb(17, 186, 193) !important;
+}
+
+.bg-oneED-2 {
+  background-color: #3cc6cc !important;
+}
+
+.text-white {
+  color: #fff !important;
+}
 /*#endregion */
 
 /*#region Navigation */
 .navbar-toggler {
   border: 0 solid;
 }
+
+.navbar-bg {
+  background-color: rgb(17, 186, 193);
+}
 /*#endregion */
 
 /*#region Content */
+.h1 {
+  font-size: 1.6rem;
+}
+
+.lead {
+  font-size: 1rem;
+  margin-top: -8px;
+}
+
 .header-img {
   object-fit: cover;
   object-position: 100% 75%;
@@ -24,24 +48,42 @@
 }
 
 .header-container {
-  padding-bottom: 1.5rem;
+  padding-bottom: 3rem;
 }
 
 .header-title {
   margin-left: 110px;
+  z-index: 2;
+  position: absolute;
+  top: 8px;
+  color: #fff;
 }
 
 .header-icon {
-  background-color: #343a40;
+  background-color: rgb(17, 186, 193);
   height: 10% !important;
   z-index: 1;
   position: absolute;
-  top: 35px;
-  left: 27px;
+  top: 22px;
+  left: 33px;
   padding: 10px;
 }
 
+.overlay {
+  background-color: rgba(#000, 0.4);
+}
+
+.header-fill {
+  background-color: #f1f1f1;
+  padding: 25px;
+}
+
+.form-spacing {
+  padding-top: 2rem;
+}
+
 .icon-bar {
+  padding-top: 1rem;
   background-color: #f1f1f1 !important;
   justify-content: center;
   height: 600px;
@@ -166,7 +208,7 @@ button:focus {
 .sidebar-nav li a:hover {
   text-decoration: none;
   color: #fff;
-  background: rgba(52, 58, 64, 0.7);
+  background: rgba(17, 186, 193, 0.7);
 }
 
 .sidebar-nav li a:active,
