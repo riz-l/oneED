@@ -16,9 +16,9 @@
       crossorigin="anonymous"
     />
     <!-- Bootstrap.min CSS-->
-    <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <!-- Personal CSS -->
-    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
 
     <title>One ED</title>
   </head>
@@ -30,7 +30,7 @@
     >
       <span class="navbar-brand mb-0 h1" href="#">
         <img
-          src="/assets/img/logos/oneed-white.png"
+          src="assets/img/logos/oneed-white.png"
           alt="One ED Logo"
           height="40"
         />
@@ -106,22 +106,42 @@
             <div class="list-group panel">
               <!-- Ward -->
               <li>
-                <a href="#" class="list-group-item" data-parent="#MainMenu">
+                <a
+                  href="#wardToggle"
+                  class="list-group-item"
+                  data-toggle="collapse"
+                  data-parent="#MainMenu"
+                >
                   <i class="fas fa-procedures space"></i>
                   Ward
                 </a>
               </li>
+              <div class="collapse" id="wardToggle">
+                <a href="#" class="list-group-item">Emergency Dept. Overview</a>
+              </div>
+
               <!-- Patient -->
               <li>
-                <a href="#" class="list-group-item" data-parent="#MainMenu">
+                <a
+                  href="#patientToggle"
+                  class="list-group-item"
+                  data-toggle="collapse"
+                  data-parent="#MainMenu"
+                >
                   <i class="fas fa-user space"></i>
                   Patient
                 </a>
               </li>
+              <div class="collapse" id="patientToggle">
+                <a href="#" class="list-group-item">Patient Overview</a>
+                <a href="#" class="list-group-item">View CAS Card</a>
+                <a href="#" class="list-group-item">Save and Close Record</a>
+                <a href="#" class="list-group-item">Cancel and Close Record</a>
+              </div>
               <!-- Assessments -->
               <li>
                 <a
-                  href="#demo3"
+                  href="#assessmentsToggle"
                   class="list-group-item"
                   data-toggle="collapse"
                   data-parent="#MainMenu"
@@ -130,15 +150,17 @@
                   Assessments
                 </a>
               </li>
-              <div class="collapse" id="demo3">
-                <a href="#" class="list-group-item">Subitem 1</a>
-                <a href="#" class="list-group-item">Subitem 2</a>
-                <a href="#" class="list-group-item">Subitem 3</a>
+              <div class="collapse" id="assessmentsToggle">
+                <a href="#" class="list-group-item">Triage and Stream</a>
+                <a href="#" class="list-group-item">Observations</a>
+                <a href="#" class="list-group-item">Seen</a>
+                <a href="#" class="list-group-item">Clinical Notes</a>
+                <a href="#" class="list-group-item">View Seen</a>
               </div>
               <!-- Training -->
               <li>
                 <a
-                  href="#demo4"
+                  href="#trainingToggle"
                   class="list-group-item"
                   data-toggle="collapse"
                   data-parent="#MainMenu"
@@ -147,10 +169,8 @@
                   Training
                 </a>
               </li>
-              <div class="collapse" id="demo4">
-                <a href="#" class="list-group-item">Subitem 1</a>
-                <a href="#" class="list-group-item">Subitem 2</a>
-                <a href="#" class="list-group-item">Subitem 3</a>
+              <div class="collapse" id="trainingToggle">
+                <a href="#" class="list-group-item">Clinical Guidelines</a>
               </div>
             </div>
           </div>
@@ -170,7 +190,7 @@
               <!--#region Patient Details Header -->
               <div class="header-container">
                 <img
-                  src="/assets/img/headers/header1.jpg"
+                  src="assets/img/headers/header1.jpg"
                   alt="Patient Details Header"
                   class="img-fluid header-img"
                 />
@@ -181,7 +201,7 @@
                   </p>
                 </div>
                 <img
-                  src="/assets/img/icons/patient.png"
+                  src="assets/img/icons/patient.png"
                   alt="Patient Details Icon"
                   class="img-fluid header-icon shadow rounded"
                 />
@@ -198,7 +218,7 @@
                     <div class="text-center mx-auto">
                       <button type="button" class="btn icon-button btn-block">
                         <img
-                          src="/assets/img/icons/patient-black.png"
+                          src="assets/img/icons/patient-black.png"
                           alt="Patient Details Icon"
                           class="img-fluid"
                         />
@@ -346,7 +366,7 @@
               <!--#region Patient History Header -->
               <div class="header-container">
                 <img
-                  src="/assets/img/headers/header4.jpg"
+                  src="assets/img/headers/header4.jpg"
                   alt="Patient Details Header"
                   class="img-fluid header-img overlay"
                 />
@@ -355,7 +375,7 @@
                   <p class="lead">Alerts, allergies, medications, etc.</p>
                 </div>
                 <img
-                  src="/assets/img/icons/patienthistory-white.png"
+                  src="assets/img/icons/patienthistory-white.png"
                   alt="Patient Details Icon"
                   class="img-fluid header-icon shadow rounded"
                 />
@@ -368,7 +388,7 @@
                 <div class="text-center mx-auto">
                   <button type="button" class="btn icon-button btn-block">
                     <img
-                      src="/assets/img/icons/alert-black.png"
+                      src="assets/img/icons/alert-black.png"
                       alt="Patient Details Icon"
                       class="img-fluid"
                     />
@@ -378,7 +398,7 @@
                 <div class="text-center mx-auto">
                   <button type="button" class="btn icon-button btn-block">
                     <img
-                      src="/assets/img/icons/allergies-black.png"
+                      src="assets/img/icons/allergies-black.png"
                       alt="Patient Details Icon"
                       class="img-fluid"
                     />
@@ -388,7 +408,7 @@
                 <div class="text-center mx-auto">
                   <button type="button" class="btn icon-button btn-block">
                     <img
-                      src="/assets/img/icons/complications-black.png"
+                      src="assets/img/icons/complications-black.png"
                       alt="Patient Details Icon"
                       class="img-fluid"
                     />
@@ -398,7 +418,7 @@
                 <div class="text-center mx-auto">
                   <button type="button" class="btn icon-button btn-block">
                     <img
-                      src="/assets/img/icons/diagnosis-black.png"
+                      src="assets/img/icons/diagnosis-black.png"
                       alt="Patient Details Icon"
                       class="img-fluid"
                     />
@@ -408,7 +428,7 @@
                 <div class="text-center mx-auto">
                   <button type="button" class="btn icon-button btn-block">
                     <img
-                      src="/assets/img/icons/findings-black.png"
+                      src="assets/img/icons/findings-black.png"
                       alt="Patient Details Icon"
                       class="img-fluid"
                     />
@@ -418,7 +438,7 @@
                 <div class="text-center mx-auto">
                   <button type="button" class="btn icon-button btn-block">
                     <img
-                      src="/assets/img/icons/complaint-black.png"
+                      src="assets/img/icons/complaint-black.png"
                       alt="Patient Details Icon"
                       class="img-fluid"
                     />
@@ -428,7 +448,7 @@
                 <div class="text-center mx-auto">
                   <button type="button" class="btn icon-button btn-block">
                     <img
-                      src="/assets/img/icons/procedures-black.png"
+                      src="assets/img/icons/procedures-black.png"
                       alt="Patient Details Icon"
                       class="img-fluid"
                     />
@@ -438,7 +458,7 @@
                 <div class="text-center mx-auto">
                   <button type="button" class="btn icon-button btn-block">
                     <img
-                      src="/assets/img/icons/symptoms-black.png"
+                      src="assets/img/icons/symptoms-black.png"
                       alt="Patient Details Icon"
                       class="img-fluid"
                     />
@@ -467,7 +487,7 @@
 
     <!--#region Scripts-->
     <!-- Personal js -->
-    <script src="/assets/js/app.js"></script>
+    <script src="assets/js/app.js"></script>
     <!-- jQuery -->
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -489,7 +509,7 @@
       crossorigin="anonymous"
     ></script>
     <!-- Bootstrap Bundle js -->
-    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
     <!-- Fontawesome -->
     <script
       src="https://kit.fontawesome.com/78b1d29e85.js"
