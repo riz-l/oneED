@@ -8,7 +8,7 @@
 
 /*#region Globals */
 .bg-oneED-1 {
-  background-color: rgb(17, 186, 193) !important;
+  background-color: #11bac1 !important;
 }
 
 .bg-oneED-2 {
@@ -32,7 +32,38 @@
 }
 
 .navbar-bg {
-  background-color: rgb(17, 186, 193);
+  background-color: #11bac1;
+}
+
+.list-group-item {
+  padding: 0.4rem 1rem !important;
+  background-color: rgba(0, 0, 0, 0.1) !important;
+  border: none !important;
+}
+
+.side-header {
+  background-color: rgba(0, 0, 0, 0) !important;
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.side-header:hover {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+  color: rgba(255, 255, 255, 1) !important;
+  transition: background-color 300ms ease-in, color 300ms ease-in;
+}
+
+.side-header-title:focus {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  color: rgba(255, 255, 255, 1) !important;
+  border-left: 2px solid #fff !important;
+}
+
+.nav-right {
+}
+
+a {
+  color: #fff !important;
+  text-decoration: none !important;
 }
 /*#endregion */
 
@@ -207,14 +238,8 @@ button:focus {
 .sidebar-nav li a {
   display: block;
   text-decoration: none;
-  color: #000;
-  transition: color 600ms;
-}
-
-.sidebar-nav li a:hover {
-  text-decoration: none;
   color: #fff;
-  background: rgba(17, 186, 193, 0.7);
+  transition: color 600ms;
 }
 
 .sidebar-nav li a:active,
