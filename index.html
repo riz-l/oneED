@@ -75,30 +75,87 @@
       <!--#region Navigation, side -->
       <div id="sidebar-wrapper" class="bg-oneED-2 shadow-lg">
         <ul class="sidebar-nav">
-          <li>
+          <!--#region OLD NAV -->
+          <!--<li>
             <a href="#" class="text-white">
-              <i class="fas fa-procedures"></i>
+              <i class="fas fa-procedures space"></i>
               Ward
             </a>
           </li>
           <li>
             <a href="#" class="text-white">
-              <i class="fas fa-user"></i>
+              <i class="fas fa-user space"></i>
               Patient
             </a>
           </li>
           <li>
             <a href="#" class="text-white">
-              <i class="fas fa-clipboard-list"></i>
+              <i class="fas fa-clipboard-list space"></i>
               Assessments
             </a>
           </li>
           <li>
             <a href="#" class="text-white">
-              <i class="fas fa-chalkboard-teacher"></i>
+              <i class="fas fa-chalkboard-teacher space"></i>
               Training
             </a>
-          </li>
+          </li>-->
+          <!--#endregion -->
+          <!--#region Accordion -->
+          <div id="MainMenu" class="bg-one-ED-2 shadow-lg">
+            <div class="list-group panel">
+              <!-- Ward -->
+              <li>
+                <a href="#" class="list-group-item" data-parent="#MainMenu">
+                  <i class="fas fa-procedures space"></i>
+                  Ward
+                </a>
+              </li>
+              <!-- Patient -->
+              <li>
+                <a href="#" class="list-group-item" data-parent="#MainMenu">
+                  <i class="fas fa-user space"></i>
+                  Patient
+                </a>
+              </li>
+              <!-- Assessments -->
+              <li>
+                <a
+                  href="#demo3"
+                  class="list-group-item"
+                  data-toggle="collapse"
+                  data-parent="#MainMenu"
+                >
+                  <i class="fas fa-clipboard-list space"></i>
+                  Assessments
+                </a>
+              </li>
+              <div class="collapse" id="demo3">
+                <a href="#" class="list-group-item">Subitem 1</a>
+                <a href="#" class="list-group-item">Subitem 2</a>
+                <a href="#" class="list-group-item">Subitem 3</a>
+              </div>
+              <!-- Training -->
+              <li>
+                <a
+                  href="#demo4"
+                  class="list-group-item"
+                  data-toggle="collapse"
+                  data-parent="#MainMenu"
+                >
+                  <i class="fas fa-chalkboard-teacher space"></i>
+                  Training
+                </a>
+              </li>
+              <div class="collapse" id="demo4">
+                <a href="#" class="list-group-item">Subitem 1</a>
+                <a href="#" class="list-group-item">Subitem 2</a>
+                <a href="#" class="list-group-item">Subitem 3</a>
+              </div>
+            </div>
+          </div>
+
+          <!--#endregion -->
         </ul>
       </div>
       <!--#endregion /Navigation, side -->
