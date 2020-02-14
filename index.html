@@ -71,7 +71,7 @@
     <!--#region Content -->
     <div id="wrapper">
       <!--#region Navigation, side -->
-      <div id="sidebar-wrapper" class="bg-oneED-1 shadow-lg">
+      <div id="sidebar-wrapper" class="bg-oneED-1 shadow-lg sticky-left">
         <ul class="sidebar-nav">
           <!--#region OLD NAV -->
           <!--<li>
@@ -116,9 +116,10 @@
                 </a>
               </li>
               <div class="collapse" id="wardToggle">
-                <a href="#" class="list-group-item">Emergency Dept. Overview</a>
+                <a href="#" class="list-group-item side-sub-title"
+                  >Emergency Dept. Overview</a
+                >
               </div>
-
               <!-- Patient -->
               <li>
                 <a
@@ -133,10 +134,18 @@
                 </a>
               </li>
               <div class="collapse" id="patientToggle">
-                <a href="#" class="list-group-item">Patient Overview</a>
-                <a href="#" class="list-group-item">View CAS Card</a>
-                <a href="#" class="list-group-item">Save and Close Record</a>
-                <a href="#" class="list-group-item">Cancel and Close Record</a>
+                <a href="#" class="list-group-item side-sub-title"
+                  >Patient Overview</a
+                >
+                <a href="#" class="list-group-item side-sub-title"
+                  >View CAS Card</a
+                >
+                <a href="#" class="list-group-item side-sub-title"
+                  >Save and Close Record</a
+                >
+                <a href="#" class="list-group-item side-sub-title"
+                  >Cancel and Close Record</a
+                >
               </div>
               <!-- Assessments -->
               <li>
@@ -152,11 +161,17 @@
                 </a>
               </li>
               <div class="collapse" id="assessmentsToggle">
-                <a href="#" class="list-group-item">Triage and Stream</a>
-                <a href="#" class="list-group-item">Observations</a>
-                <a href="#" class="list-group-item">Seen</a>
-                <a href="#" class="list-group-item">Clinical Notes</a>
-                <a href="#" class="list-group-item">View Seen</a>
+                <a href="#" class="list-group-item side-sub-title"
+                  >Triage and Stream</a
+                >
+                <a href="#" class="list-group-item side-sub-title"
+                  >Observations</a
+                >
+                <a href="#" class="list-group-item side-sub-title">Seen</a>
+                <a href="#" class="list-group-item side-sub-title"
+                  >Clinical Notes</a
+                >
+                <a href="#" class="list-group-item side-sub-title">View Seen</a>
               </div>
               <!-- Training -->
               <li>
@@ -172,7 +187,9 @@
                 </a>
               </li>
               <div class="collapse" id="trainingToggle">
-                <a href="#" class="list-group-item">Clinical Guidelines</a>
+                <a href="#" class="list-group-item side-sub-title"
+                  >Clinical Guidelines</a
+                >
               </div>
             </div>
           </div>
@@ -196,6 +213,7 @@
                   alt="Patient Details Header"
                   class="img-fluid header-img"
                 />
+
                 <div class="header-title">
                   <p class="h1">Patient Details</p>
                   <p class="lead">
