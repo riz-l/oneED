@@ -53,12 +53,25 @@
 }
 
 .side-header-title:focus {
-  background-color: rgba(255, 255, 255, 0.1) !important;
+  background-color: rgba(255, 255, 255, 0.2) !important;
   color: rgba(255, 255, 255, 1) !important;
   border-left: 2px solid #fff !important;
 }
 
-.nav-right {
+.side-sub-title {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.side-sub-title:hover {
+  background-color: rgba(0, 0, 0, 0.2) !important;
+  color: rgba(255, 255, 255, 1) !important;
+  transition: background-color 300ms ease-in, color 300ms ease-in;
+}
+
+.side-sub-title:focus {
+  background-color: rgba(0, 0, 0, 0.2) !important;
+  color: rgba(255, 255, 255, 1) !important;
+  transition: background-color 300ms ease-in, color 300ms ease-in;
 }
 
 a {
@@ -121,6 +134,7 @@ a {
 
 .icon-bar {
   padding-top: 1rem;
+  margin-bottom: 4rem;
   background-color: #f1f1f1 !important;
   justify-content: center;
   height: 600px;
