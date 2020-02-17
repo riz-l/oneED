@@ -55,16 +55,18 @@
         <i class="fas fa-angle-double-down"></i>
       </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!--<div class="collapse navbar-collapse hide" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">
-              <i class="fas fa-home fa-lg"></i>
-              <span class="sr-only">(current)</span></a
-            >
+            <div class="user-group">
+              <p>Welcome User</p>
+              <p>Department</p>
+              <p>UserType</p>
+              <i class="fas fa-users rounded"></i>
+            </div>
           </li>
         </ul>
-      </div>
+      </div>-->
     </nav>
     <!--#endregion /Navigation, top -->
 
@@ -76,32 +78,6 @@
         class="bg-oneED-1 shadow-lg sticky-left fixed-left"
       >
         <ul class="sidebar-nav">
-          <!--#region OLD NAV -->
-          <!--<li>
-            <a href="#" class="text-white">
-              <i class="fas fa-procedures space"></i>
-              Ward
-            </a>
-          </li>
-          <li>
-            <a href="#" class="text-white">
-              <i class="fas fa-user space"></i>
-              Patient
-            </a>
-          </li>
-          <li>
-            <a href="#" class="text-white">
-              <i class="fas fa-clipboard-list space"></i>
-              Assessments
-            </a>
-          </li>
-          <li>
-            <a href="#" class="text-white">
-              <i class="fas fa-chalkboard-teacher space"></i>
-              Training
-            </a>
-          </li>-->
-          <!--#endregion -->
           <!--#region Accordion -->
           <div id="MainMenu" class="bg-one-ED-1">
             <div class="list-group panel">
@@ -236,10 +212,13 @@
                 <div class="row">
                   <!--#region Patient Details Icon Bar -->
                   <div
-                    class="col-lg-2 col-md-2 col-sm-2 col-2 icon-bar shadow-md"
+                    class="col-lg-2 col-md-2 col-sm-2 col-2 icon-bar shadow-md no-padding-left no-padding-right no-padding-bottom no-padding-top"
                   >
                     <div class="text-center mx-auto">
-                      <button type="button" class="btn icon-button btn-block">
+                      <button
+                        type="button"
+                        class="btn icon-button btn-block icon-bar-bg"
+                      >
                         <img
                           src="assets/img/icons/patient-black.png"
                           alt="Patient Details Icon"
@@ -406,100 +385,151 @@
               </div>
               <!--#endregion /Patient History Header -->
 
-              <!--#region Patient History Icon Bar -->
-              <div class="col-lg-2 col-md-2 col-sm-2 col-2 icon-bar shadow-md">
-                <div class="text-center mx-auto">
-                  <button type="button" class="btn icon-button btn-block">
-                    <img
-                      src="assets/img/icons/alert-black.png"
-                      alt="Patient Details Icon"
-                      class="img-fluid"
-                    />
-                    <p class="text-center">Alerts</p>
-                  </button>
-                </div>
-                <div class="text-center mx-auto">
-                  <button type="button" class="btn icon-button btn-block">
-                    <img
-                      src="assets/img/icons/allergies-black.png"
-                      alt="Patient Details Icon"
-                      class="img-fluid"
-                    />
-                    <p class="text-center">Allergies</p>
-                  </button>
-                </div>
-                <div class="text-center mx-auto">
-                  <button type="button" class="btn icon-button btn-block">
-                    <img
-                      src="assets/img/icons/complications-black.png"
-                      alt="Patient Details Icon"
-                      class="img-fluid"
-                    />
-                    <p class="text-center">Complications</p>
-                  </button>
-                </div>
-                <div class="text-center mx-auto">
-                  <button type="button" class="btn icon-button btn-block">
-                    <img
-                      src="assets/img/icons/diagnosis-black.png"
-                      alt="Patient Details Icon"
-                      class="img-fluid"
-                    />
-                    <p class="text-center">Diagnosis</p>
-                  </button>
-                </div>
-                <div class="text-center mx-auto">
-                  <button type="button" class="btn icon-button btn-block">
-                    <img
-                      src="assets/img/icons/findings-black.png"
-                      alt="Patient Details Icon"
-                      class="img-fluid"
-                    />
-                    <p class="text-center">Findings</p>
-                  </button>
-                </div>
-                <div class="text-center mx-auto">
-                  <button type="button" class="btn icon-button btn-block">
-                    <img
-                      src="assets/img/icons/complaint-black.png"
-                      alt="Patient Details Icon"
-                      class="img-fluid"
-                    />
-                    <p class="text-center">Presenting Complaints</p>
-                  </button>
-                </div>
-                <div class="text-center mx-auto">
-                  <button type="button" class="btn icon-button btn-block">
-                    <img
-                      src="assets/img/icons/procedures-black.png"
-                      alt="Patient Details Icon"
-                      class="img-fluid"
-                    />
-                    <p class="text-center">Procedures</p>
-                  </button>
-                </div>
-                <div class="text-center mx-auto">
-                  <button type="button" class="btn icon-button btn-block">
-                    <img
-                      src="assets/img/icons/symptoms-black.png"
-                      alt="Patient Details Icon"
-                      class="img-fluid"
-                    />
-                    <p class="text-center">Symptoms</p>
-                  </button>
-                </div>
-              </div>
-              <!--#endregion /Patient History Icon Bar -->
+              <div class="container-fluid">
+                <div class="row">
+                  <!--#region Patient History Icon Bar -->
+                  <div
+                    class="col-lg-2 col-md-2 col-sm-2 col-2 icon-bar shadow-md no-padding-left no-padding-right no-padding-top no-padding-bottom"
+                  >
+                    <div class="text-center mx-auto">
+                      <button
+                        type="button"
+                        class="btn icon-button btn-block icon-bar-bg"
+                      >
+                        <img
+                          src="assets/img/icons/alert-black.png"
+                          alt="Patient Details Icon"
+                          class="img-fluid"
+                        />
+                        <p class="text-center">Alerts</p>
+                      </button>
+                    </div>
+                    <div class="text-center mx-auto">
+                      <button
+                        type="button"
+                        class="btn icon-button btn-block icon-bar-bg"
+                      >
+                        <img
+                          src="assets/img/icons/allergies-black.png"
+                          alt="Patient Details Icon"
+                          class="img-fluid"
+                        />
+                        <p class="text-center">Allergies</p>
+                      </button>
+                    </div>
+                    <div class="text-center mx-auto">
+                      <button
+                        type="button"
+                        class="btn icon-button btn-block icon-bar-bg"
+                      >
+                        <img
+                          src="assets/img/icons/complications-black.png"
+                          alt="Patient Details Icon"
+                          class="img-fluid"
+                        />
+                        <p class="text-center">Complications</p>
+                      </button>
+                    </div>
+                    <div class="text-center mx-auto">
+                      <button
+                        type="button"
+                        class="btn icon-button btn-block icon-bar-bg"
+                      >
+                        <img
+                          src="assets/img/icons/diagnosis-black.png"
+                          alt="Patient Details Icon"
+                          class="img-fluid"
+                        />
+                        <p class="text-center">Diagnosis</p>
+                      </button>
+                    </div>
+                    <div class="text-center mx-auto">
+                      <button
+                        type="button"
+                        class="btn icon-button btn-block icon-bar-bg"
+                      >
+                        <img
+                          src="assets/img/icons/findings-black.png"
+                          alt="Patient Details Icon"
+                          class="img-fluid"
+                        />
+                        <p class="text-center">Findings</p>
+                      </button>
+                    </div>
+                    <div class="text-center mx-auto">
+                      <button
+                        type="button"
+                        class="btn icon-button btn-block icon-bar-bg"
+                      >
+                        <img
+                          src="assets/img/icons/complaint-black.png"
+                          alt="Patient Details Icon"
+                          class="img-fluid"
+                        />
+                        <p class="text-center">Presenting Complaints</p>
+                      </button>
+                    </div>
+                    <div class="text-center mx-auto">
+                      <button
+                        type="button"
+                        class="btn icon-button btn-block icon-bar-bg"
+                      >
+                        <img
+                          src="assets/img/icons/procedures-black.png"
+                          alt="Patient Details Icon"
+                          class="img-fluid"
+                        />
+                        <p class="text-center">Procedures</p>
+                      </button>
+                    </div>
+                    <div class="text-center mx-auto">
+                      <button
+                        type="button"
+                        class="btn icon-button btn-block icon-bar-bg"
+                      >
+                        <img
+                          src="assets/img/icons/symptoms-black.png"
+                          alt="Patient Details Icon"
+                          class="img-fluid"
+                        />
+                        <p class="text-center">Symptoms</p>
+                      </button>
+                    </div>
+                  </div>
+                  <!--#endregion /Patient History Icon Bar -->
 
-              <!--#region Patient History Form -->
-              <div class="col-lg-10 col-md-10 col-sm-10 col-10">
-                <form>
-                  <div class="form-row"></div>
-                </form>
+                  <!--#region Patient History Form -->
+                  <div class="col-lg-10 col-md-10 col-sm-10 col-10">
+                    <div class="row">
+                      <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                        <p class="h2 alert-heading">Alerts: &#35;</p>
+                        <div class="alert-section">
+                          <div class="alert-header">
+                            <img
+                              src="assets/img/icons/alert-colour.png"
+                              alt="Alert Symbol"
+                              class="img-fluid alert-img img-valign alert-item-1"
+                            />
+                            <p class="h3 alert-item-2">Clinical</p>
+                            <p class="lead">Active</p>
+                          </div>
+                          <p>A&amp;E Attention - Check notes</p>
+                          <a href="#">
+                            <div class="alert-border">
+                              <i
+                                class="fas fa-chevron-right fa-lg float-right alert-arrow"
+                              ></i>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--#endregion /Patient History Form -->
+                </div>
+                <!--#endregion /Patient History -->
               </div>
-              <!--#endregion /Patient History Form -->
             </div>
-            <!--#endregion /Patient History -->
           </div>
         </div>
         <!--#endregion /Main Content -->

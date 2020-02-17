@@ -15,6 +15,10 @@
   background-color: #3cc6cc !important;
 }
 
+.bg-oneED-3 {
+  background-color: #000 !important;
+}
+
 .text-white {
   color: #fff !important;
 }
@@ -23,6 +27,22 @@
   width: 10px;
   padding-right: 3.5rem;
   margin-left: -1.2rem;
+}
+
+.no-padding-left {
+  padding-left: 0 !important;
+}
+
+.no-padding-right {
+  padding-right: 0 !important;
+}
+
+.no-padding-top {
+  padding-top: 0 !important;
+}
+
+.no-padding-bottom {
+  padding-bottom: 0 !important;
 }
 /*#endregion */
 
@@ -33,6 +53,25 @@
 
 .navbar-bg {
   background-color: #11bac1;
+}
+
+.user-group {
+  color: #fff;
+  padding-top: 1rem;
+  float: right;
+  text-align: right;
+}
+
+.user-group p {
+  padding: 0 !important;
+  line-height: 0.8rem;
+}
+
+.user-group i {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  font-size: 2.5rem;
+  border: 1px solid #fff;
+  padding: 0.8rem;
 }
 
 .list-group-item {
@@ -55,7 +94,7 @@
 .side-header-title:focus {
   background-color: rgba(255, 255, 255, 0.2) !important;
   color: rgba(255, 255, 255, 1) !important;
-  border-left: 2px solid #fff !important;
+  border-left: 4px solid #fff !important;
 }
 
 .side-sub-title {
@@ -132,57 +171,44 @@ a {
   padding-top: 2rem;
 }
 
-.icon-bar {
-  padding-top: 1rem;
-  margin-bottom: 4rem;
-  background-color: #f1f1f1 !important;
+.alert-section {
+  border: 1px solid red;
+  border-right: 30px solid red;
+  padding: 2%;
+}
+
+.alert-heading {
+  padding-bottom: 1rem;
+}
+
+.alert-img {
+  width: 40px;
+}
+
+.alert-header {
+  display: flex;
+  margin-bottom: 1rem;
+  text-align: left;
   justify-content: center;
-  height: 600px;
 }
 
-.icon-bar p {
-  font-size: 0.6rem;
-  text-align: center;
-  left: 50%;
+.alert-item-1 {
+  flex: 1;
+  margin-right: 1rem;
 }
 
-.icon-bar img {
-  width: 25px;
-  height: 25px;
-  margin-top: 15px;
+.alert-item-2 {
+  flex: 9;
 }
 
-button {
-  padding: 0% !important;
+.alert-arrow {
+  color: #fff;
+  position: absolute;
+  right: 23px;
+  top: 115px;
 }
 
-button:focus {
-  border: none !important;
-  outline: none !important;
-}
-
-.btn:focus {
-  box-shadow: none !important;
-}
-
-.icon-button {
-  justify-content: center;
-  vertical-align: middle;
-  scale: 1;
-  transition: transform 600ms;
-  width: 100%;
-}
-
-.icon-button:hover {
-  transform: scale(1.2);
-}
-
-.icon-button:focus {
-  background-color: #dcdcdc;
-  border: none !important;
-  outline: none !important;
-}
-
+/*#region Bootstrap Sidebar */
 /*!
  * Start Bootstrap - Simple Sidebar HTML Template (http://startbootstrap.com)
  * Code licensed under the Apache License v2.0.
@@ -303,6 +329,67 @@ button:focus {
     margin-right: 0;
   }
 }
+/*#endregion */
+/*#endregion */
+
+/*#region Icon Bar */
+.icon-bar-bg {
+  background-color: #f1f1f1;
+  transition: background-color 300ms ease-in-out;
+}
+
+.icon-bar-bg:hover {
+  background-color: rgba(0, 0, 0, 0.2) !important;
+}
+
+.icon-bar {
+  padding-top: 1rem;
+  margin-bottom: 4rem;
+  background-color: none !important;
+  justify-content: center;
+  height: 600px;
+}
+
+.icon-bar p {
+  font-size: 0.6rem;
+  text-align: center;
+  left: 50%;
+}
+
+.icon-bar img {
+  width: 25px;
+  height: 25px;
+  margin-top: 15px;
+}
+
+button {
+  padding: 0% !important;
+  margin: 4% !important;
+  width: 80% !important;
+}
+
+button:focus {
+  border: none !important;
+  outline: none !important;
+}
+
+.btn:focus {
+  box-shadow: none !important;
+}
+
+.icon-button {
+  justify-content: center;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.icon-button:focus {
+  background-color: #dcdcdc;
+  border: none !important;
+  outline: none !important;
+  border-left: 4px solid #11bac1 !important;
+}
+
 /*#endregion */
 
 /*#region Media Queries */
