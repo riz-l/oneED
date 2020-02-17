@@ -362,13 +362,13 @@ a {
   margin-top: 15px;
 }
 
-button {
+.icon-button-click {
   padding: 0% !important;
   margin: 4% !important;
   width: 80% !important;
 }
 
-button:focus {
+.icon-button-click:focus {
   border: none !important;
   outline: none !important;
 }
